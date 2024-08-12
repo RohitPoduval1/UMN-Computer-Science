@@ -1,0 +1,37 @@
+• add(T element)
+    -ArrayList Runtime:
+        The runtime is O(n) where n is the number of non-null elements in the list (or list.size)
+        because resizing is linearly dependent on the size of the array since elements need to be copied over to the new array.
+    -LinkedList Runtime:
+        The runtime is O(n) where n is the number of non-null elements in the list (or list.size) because you must traverse
+        the entire length of the list to get to the last node and have it point to the new element.
+
+• getMax() 
+    -ArrayList Runtime:
+        If the list is sorted, the runtime is O(1) since the largest element will be at the end, which can 
+        be indexed directly. If the list is not sorted, the runtime is O(n) where n is the number of non-null elements in the list
+        (or list.size) since the all elements in the list will need to be iterated through and compared with a variable to get the
+        largest element. 
+    -LinkedList Runtime:
+        The runtime is O(n) since in a linked list, you cannot index items directly. To get to the last item if the list is sorted, 
+        we must traverse the entire list. If the list is not sorted, the entire list must be traversed to make comparisons with a
+        variable to get the largest element.
+
+• removeDuplicates()
+    -ArrayList Runtime:
+        O(n²) where n is the number of non-null elements in the list (or list.size) because there is a for loop that
+        loops through the entire size of the list while calling add() (which is O(n)) inside the loop, which essentially acts as a nested
+        for loop since both loops are going through the entire list. Essentially, add() is being called n times which is n². 
+    -LinkedList Runtime:
+        O(n²) where n is the number of non-null elements in the list (or list.size) because there is a while loop that
+        loops through the entire list while calling add() (which is O(n)) inside the loop. 
+
+• reverse()
+    -ArrayList Runtime: 
+        The runtime is O(n²) where n is the number of non-null elements in the list (or list.size) since the algorithm to
+        reverse is based on bubble sort and implements a for loop nested in a for loop, both of which iterate over the
+        entire size of the list. 
+    -LinkedList Runtime:
+        The runtime is O(n) where n is the number of non-null elements in the list (or list.size) since there is only one
+        while loop that traverses the size of list and swapping elements (which is just reassignment of variables) is a
+        constant operation.

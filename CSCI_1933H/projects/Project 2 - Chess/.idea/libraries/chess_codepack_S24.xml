@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="chess_codepack_S24">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/chess_codepack_S24.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
